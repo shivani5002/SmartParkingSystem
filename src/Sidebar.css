@@ -1,0 +1,120 @@
+.sidebar {
+    width: 250px;
+    background-color: #222;
+    color: #fff;
+    padding: 1rem;
+    font-family: Arial, sans-serif;
+    position:fixed;
+    height:100%;
+    transition: 0.5s;
+    left: -100%; /* Hide the sidebar off-screen initially */
+    overflow:auto;
+    top:0;
+    z-index: 1001;
+    transform: translateX(-100%); 
+  }
+  .sidebar.open {
+    left: 0;  /* Show the sidebar when active */
+    transform: translateX(0);
+  }
+
+  .sidebar__toggle {
+    /* display: block;  Show the hamburger icon on mobile */
+    position:fixed;
+    left:0;
+    top:0;
+    z-index: 1002; /* Increase z-index to keep toggle button on top */
+    cursor: pointer;
+    background-color: #222;
+    color:white;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 0;
+    transition: left 0.5s;
+    
+  }
+  .sidebar.open  +  .sidebar__toggle {
+    left: 0; 
+    z-index: 1002;
+  }
+  
+
+  .sidebar-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .sidebar__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0.8rem;
+    margin-top:1rem;
+  }
+  
+  .sidebar__logo {
+    width: 60px;  /* Size of the logo */
+    height: 60px;
+    border-radius: 50%;  /* Optional: to make the image circular */
+    padding-bottom:8px;
+    object-fit: cover;
+  }
+  
+  .sidebar h3 {
+    font-size: 1.8rem;
+    margin: 0;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .sidebar__menu a{
+    width: 100%;
+    color: inherit; /* Inherits the color from the parent element (white in this case) */
+    text-decoration: none; /* Removes the underline */
+    display: flex; /* Makes the entire link clickable */
+    align-items: center;
+    gap:0.8rem;
+    padding: 10px;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .sidebar__menu li {
+    cursor: pointer;
+    transition: background 0.3s;
+    color:white;
+    font-size: 1.2rem;  /* Adjust font size for mobile */
+    list-style-type: none;
+    padding:0;
+    margin:0;
+  }
+  
+  .sidebar__menu a:hover {
+    color: #fff;
+    background-color: #575757; /* Optional hover effect */
+  }
+  @media only screen and (max-width: 768px) {
+    .sidebar {
+      transition: 0.5s;
+      left: -100%; /* Hide the sidebar off-screen initially */
+      overflow:auto;
+      top:0;
+      width: 300px;
+    }
+    .sidebar.open {
+      left: 0px;  /* Show the sidebar when active */
+      
+    }
+  
+    .sidebar__toggle {
+      display: block;  /* Show the hamburger icon on mobile */
+      position:fixed;
+      left: 0;
+      top:0;
+      z-index: 1002;
+      cursor: pointer;
+    
+    }
+  }

@@ -1,0 +1,197 @@
+
+/* Profile page wrapper */
+.profile-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+/* Hero section */
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 18px;
+}
+
+/* Profile card */
+.profile-card {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  overflow: hidden;
+  padding:20px;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: #3ba2e7;
+  color: #fff;
+}
+
+.profile-img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  border: 2px solid #fff;
+  margin: 20px;
+  object-fit: cover;
+}
+
+.profile-info {
+  text-align: center; /* Centered text */
+}
+
+.profile-info h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.profile-info p {
+  margin: 5px 0 10px;
+  font-size: 18px;
+  color: #1c0303ef;
+}
+
+.edit-btn {
+  padding: 8px 16px;
+  background-color: #f1c40f;
+  color: #333;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.edit-btn:hover {
+  background-color: #ff9800;
+}
+
+/* Profile details */
+.profile-details {
+  padding: 8px;
+  text-align: center; /* Centered text */
+}
+
+.profile-details h2 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.profile-details p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #555;
+}
+
+/* Parking history card */
+.parking-history-card {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.parking-history-card h2 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.parking-history-card ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.parking-history-card li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: rgba(213, 212, 212, 0.447);
+  border-radius: 8px;
+}
+
+.parking-history-card li:last-child {
+  margin-bottom: 0;
+}
+
+.history-location {
+  font-size: 16px;
+  color: #1f2937;
+  font-weight: 600;
+}
+
+.history-date, .history-duration {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.form-control_p {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+.save-btn_p,
+.cancel-btn_p {
+  width: 130px;
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.save-btn_p {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.cancel-btn_p {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .profile-wrapper {
+    padding: 10px;
+  }
+  .profile-card, .parking-history-card {
+    width: 100%;
+  }
+  .profile-header {
+    flex-direction: column;
+    text-align: center;
+  }
+  .profile-info {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  .profile-img {
+    width: 80px;
+    height: 80px;
+    margin:0;
+  }
+}

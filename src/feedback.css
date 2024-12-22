@@ -1,0 +1,165 @@
+/* Feedback Page Styles */
+.feedback-page-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ffecd2, #fcb69f);
+} 
+
+.feedback-page-container .feedback-container {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+}
+
+.feedback-page-container .feedback-container h2 {
+  font-weight: bold;
+  color: #333; /* Dark Grey */
+  margin-bottom: 20px;
+}
+
+.feedback-page-container .feedback-container label {
+  font-weight: bold;
+  color: #666; /* Medium Grey */
+  margin-bottom: 10px;
+}
+
+/* Feedback Form Styles */
+.feedback-page-container .feedback-form-container .feedback-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback-page-container .feedback-form-container  .form-group {
+  margin-bottom: 30px;
+}
+
+.feedback-page-container .feedback-form-container  .form-control {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-page-container .feedback-form-container  .emoji-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.feedback-page-container .feedback-form-container  .emoji {
+  font-size: 2rem;
+  cursor: pointer;
+  transition: transform 0.2s, color 0.3s;
+}
+
+.feedback-page-container .feedback-form-container  .emoji:hover,
+.feedback-page-container .feedback-form-container  .emoji.selected {
+  transform: scale(1.2);
+  color: #FF6F61; /* Coral */
+}
+
+/* Feedback History Styles */
+
+.feedback-page-container .feedback-history-section-container .feedback-history-section {
+  padding: 20px;
+}
+
+.feedback-page-container .feedback-history-section-container .card {
+  padding: 15px; /* Reduced padding */
+  margin-bottom: 15px; /* Reduced margin */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #FFF0F0; /* Light Coral Tint */
+  border-left: 5px solid #FF6F61; /* Coral Border */
+  max-width: 90%; /* Reduced max-width for smaller card */
+}
+
+.feedback-page-container .feedback-history-section .emoji {
+  font-size: 1.5rem;
+  margin-right: 10px; /* Adjusted for left alignment */
+  display: inline-block; /* Align to the left */
+  text-align: left; /* Ensures alignment to left */
+  vertical-align: middle; /* Ensures alignment with the card content */
+  margin-bottom: 10px; /* Space between emoji and text */
+}
+
+.feedback-page-container .feedback-history-section-container .card-body {
+  font-size: 18px;
+  color: #444; /* Dark Grey */
+}
+
+.feedback-page-container .feedback-history-section-container .card-body small {
+  font-size: 16px;
+  color: #666; /* Medium Grey */
+}
+
+/* Button Styles */
+.feedback-page-container .feedback-form-container .btn-gradient {
+  background: linear-gradient(135deg, #FF6F61, #FF9A8B); /* Dark to Light Coral */
+  border: none;
+  padding: 10px 20px;
+  margin-bottom: 25px;
+  color: white;
+  border-radius: 30px;
+  transition: transform 0.3s, background 0.3s;
+  width: 100%;
+}
+
+.feedback-page-container .feedback-form-container .btn-gradient:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #FF9A8B, #FF6F61); /* Reverse Coral Gradient */
+}
+
+/* Confirmation Message Styles */
+.feedback-page-container .feedback-form-container .feedback-confirmation {
+  background: #dff0d8; /* Light Green */
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  color: #3e8e41; /* Dark Green */
+  margin-top: 20px;
+}
+
+/* Error Message Styles */
+.feedback-page-container .feedback-form-container .error-message {
+  color: #ef2020; /* Red color */
+  font-size: 20px;
+  text-align: center;
+  transition: opacity 0.3s;
+}
+
+/* Feedback Stats Styles */
+.feedback-page-container .feedback-stats-container .feedback-stats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.feedback-page-container .feedback-stats-container  .stat {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #FF9A8B; /* Light Coral */
+  text-align: center;
+}
+
+.feedback-page-container .feedback-stats-container .label {
+  font-size: 20px;
+  color: #FF6F61; /* Coral */
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .feedback-page-container .feedback-form-container,
+  .feedback-page-container .feedback-history-section-container {
+      margin-bottom: 30px;
+  }
+}

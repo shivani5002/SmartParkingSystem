@@ -1,0 +1,114 @@
+.sidebar_a {
+    width: 250px;
+    background-color: #222;
+    color: #fff;
+    padding: 1rem;
+    font-family: Arial, sans-serif;
+    position:fixed;
+    height:100%;
+    transition: 0.5s;
+    left: -100%; /* Hide the sidebar off-screen initially */
+    overflow:auto;
+    top:0;
+    z-index: 1001;
+    transform: translateX(-100%); 
+  }
+  .sidebar_a.open1 {
+    left: 0;  /* Show the sidebar when active */
+    transform: translateX(0);
+  }
+
+  .sidebar__toggle_a {
+    /* display: block;  Show the hamburger icon on mobile */
+    position:fixed;
+    left:0;
+    top:0;
+    z-index: 1002; /* Increase z-index to keep toggle button on top */
+    cursor: pointer;
+    background-color: #222;
+    color:white;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 0;
+    transition: left 0.5s;
+    
+  }
+  .sidebar_a.open1  +  .sidebar__toggle_a {
+    left: 0; 
+    z-index: 1002;
+  }
+  
+
+  .sidebar-content_a {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .sidebar__header_a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0.8rem;
+    margin-top:1rem;
+  }
+  
+
+  
+  .sidebar_a h2 {
+    font-size: 1.8rem;
+    margin: 0;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .sidebar__menu_a a{
+    width: 100%;
+    color: inherit; /* Inherits the color from the parent element (white in this case) */
+    text-decoration: none; /* Removes the underline */
+    display: flex; /* Makes the entire link clickable */
+    align-items: center;
+    gap:0.8rem;
+    padding: 10px;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .sidebar__menu_a li {
+    cursor: pointer;
+    transition: background 0.3s;
+    color:white;
+    font-size: 1.2rem;  /* Adjust font size for mobile */
+    list-style-type: none;
+    padding:0;
+    margin:0;
+  }
+  
+  .sidebar__menu_a a:hover {
+    color: #fff;
+    background-color: #575757; /* Optional hover effect */
+  }
+  @media only screen and (max-width: 768px) {
+    .sidebar_a {
+      transition: 0.5s;
+      left: -100%; /* Hide the sidebar off-screen initially */
+      overflow:auto;
+      top:0;
+      width: 300px;
+    }
+    .sidebar_a.open1 {
+      left: 0px;  /* Show the sidebar when active */
+      
+    }
+  
+    .sidebar__toggle_a {
+      display: block;  /* Show the hamburger icon on mobile */
+      position:fixed;
+      left: 0;
+      top:0;
+      z-index: 1002;
+      cursor: pointer;
+    
+    }
+  }

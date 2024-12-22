@@ -1,0 +1,213 @@
+
+ .smart-parking-info {
+   display: flex;
+   flex-direction: column;
+   margin-top: 3% auto;
+   width: 100%;
+   padding: 0 20px;
+   box-sizing: border-box;
+ }
+ .smart-parking-info-container {
+   width: 100%;
+   max-width: 100%;
+ }
+
+ .smart-parking-info-container .section {
+   margin-top: 0;
+ }
+
+ .smart-parking-info-container .map-context {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+ }
+ .smart-parking-info-container .map-text {
+   flex: 1;
+   padding: 3px;
+  text-align: center;
+   font-size: 0.9rem;
+ }
+ .smart-parking-info-container .map-image-container {
+   flex: 1.5;
+   padding: 20px;
+   text-align: center;
+   margin-top: 3%;
+ }
+ .smart-parking-info-container .map-image {
+   width: 90%;
+   height: 90%;
+   object-fit: cover;
+   border-radius: 8px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ }
+
+ .smart-parking-info-container .cards-container {
+   display: flex;
+   gap: 20px;
+   align-items: flex-start;
+ }
+
+ .smart-parking-info-container .project-help-container.small-card {
+   flex: 0.5;
+   padding: 20px;
+   border: 1px solid #ddd;
+   border-radius: 8px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   background-color: #fff;
+   line-height: 190%;
+   margin-top: 5%;
+   font-size: 1.2rem;
+   margin-left: 2%;
+ }
+
+ .smart-parking-info-container .benefits-cards-container {
+   display: flex;
+   gap: 20px;
+   flex: 1;
+ }
+
+ .smart-parking-info-container .benefit-card {
+   flex:1;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   padding: 20px;
+   border: 1px solid #ddd;
+   border-radius: 8px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   background-color: #fff;
+   text-align: center;
+   margin-bottom: 5%;
+   margin-top: 4%;
+   margin-right: 0.5%;
+ }
+
+ .smart-parking-info-container .benefit-card h3 {
+   margin-bottom: 5px;
+ }
+
+ .smart-parking-info-container .benefit-image {
+   width: 100%;
+   aspect-ratio: 16/9;
+   border-radius: 8px;
+   margin-bottom: 4px;
+ }
+
+ .smart-parking-info-container .benefit-points {
+   list-style-type: none;
+   padding-left: 0;
+   margin-top: 10px;
+   text-align: left;
+ }
+
+ .smart-parking-info-container .benefit-points li {
+   margin-bottom: 8px;
+   display: flex;
+   align-items: center;
+   font-size: 1.2rem;
+ }
+
+.smart-parking-info-container  .benefit-points li::before {
+   content: '•';
+   color: #4CAF50; 
+   font-weight: bold;
+   display: inline-block;
+   width: 1em;
+   margin-right: 8px;
+ }
+
+
+
+ @media (max-width: 768px) {
+   .smart-parking-info {
+     padding:10px;
+  }
+
+   .smart-parking-info-container {
+     padding: 0;
+   }
+
+   .smart-parking-info-container  .map-context {
+     flex-direction: column ; 
+     align-items: center ;
+   }
+  
+   .smart-parking-info-container .map-image-container {
+    
+     width: 100% ;
+     left: unset;
+   text-align: center;
+   }
+
+   .smart-parking-info-container .map-image {
+     width: 100% ;
+     height: auto ;
+     margin-left:7%;
+     margin-top: 3%;
+   }
+  
+   .smart-parking-info-container .map-text {
+    
+     text-align: center ;
+     padding: 10px ;
+     width: 100% ;
+     margin-left:8%;
+   }
+   .smart-parking-info-container .cards-container {
+   display: flex;
+   flex-wrap: wrap; 
+   gap: 20px;
+   justify-content: center; 
+   align-items: stretch; 
+   }
+
+   .benefits-cards-container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+   }
+  
+ @media (max-width: 768px) {
+   .smart-parking-info-container .project-help-container.small-card,
+   .smart-parking-info-container .benefit-card {
+     flex: 1 1 calc(100% - 20px); 
+     max-width: calc(100% - 20px);
+     padding: 20px;
+     margin: 0 auto; 
+     height: auto;
+     overflow: visible; 
+     box-sizing: border-box;
+     align-items: center;
+   }
+
+   @media (min-width: 480px) and (max-width: 768px) {
+     .smart-parking-info-container .project-help-container.small-card,
+     .smart-parking-info-container .benefit-card {
+       flex: 1 1 calc(48% - 20px); 
+       max-width: calc(48% - 20px);
+       margin-bottom: 20px;
+     }
+   }}
+   .smart-parking-info-container .benefit-card, 
+   .smart-parking-info-container .project-help-container.small-card {
+   height: auto; 
+   margin: 0 ;
+   width: 100% ;
+ }
+
+ .smart-parking-info-container .benefit-card {
+   flex-grow: 0; 
+   flex-basis: auto ;
+ }
+
+ .smart-parking-info-container .project-help-container.small-card {
+   flex-grow: 1 ;
+  flex-basis: 100% ;
+   width: 100% ;
+   margin-left: 10%;
+  
+ }
+ .smart-parking-info-container .benefit-points li {
+   font-size: 1rem ; }
+   }

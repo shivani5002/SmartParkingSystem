@@ -1,0 +1,93 @@
+
+.feedback-page_a {
+    width:100%;
+    padding: 20px;
+    background-color: #f4f4f9; /* Light background for admin interface */
+    height:100%;
+  }
+  
+  .feedback-page_a .feedback-container_a {
+    max-width: 100%;
+    margin: auto;
+    padding: 20px;
+    padding-top: 0;
+  }
+
+  .feedback-page_a .feedback-container_a .text-center_a{
+    background-image: url("https://cdn.pixabay.com/video/2021/09/13/88452-607855996_tiny.jpg");
+    padding:20px;
+    border-radius: 5px;
+    color:#f4f3f3;
+    font-size: 40px;
+    
+  }
+  
+  .feedback-page_a .feedback-container_a h2 {
+    color: #ff6f61; /* Coral shade for headings */
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .feedback-page_a .feedback-container_a .feedback-cards_a {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .feedback-page_a .feedback-container_a .feedback-cards_a .card_a {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    background-color: white;
+    transition: background-color 0.3s ease; 
+  }
+
+  .feedback-page_a .feedback-container_a .feedback-cards_a .card_a:hover{
+    background-color: #f3e5f5; /* Light purple color for hover */
+    box-shadow: 0 4px 8px rgba(128, 0, 128, 0.2); /* Subtle purple shadow */
+    cursor: pointer; /* Change the cursor to indicate interactivity */
+  }
+  
+  .feedback-page_a .feedback-container_a .feedback-cards_a .card_a .card-body_a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .feedback-page_a .feedback-container_a .feedback-cards_a .card_a .card-body_a .emoji_a {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .feedback-page_a .feedback-container_a .feedback-cards_a .card_a .card-body_a .feedback-type_a {
+    color: #555;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+ 
+  
+  /* Media queries for small devices */
+  
+  @media only screen and (max-width: 768px) {
+    .feedback-page_a .feedback-container_a .feedback-cards_a {
+      grid-template-columns: 1fr;
+    }
+    .feedback-page_a .feedback-container_a {
+      padding: 10px;
+    }
+    .feedback-page_a .feedback-container_a .feedback-cards_a .card_a {
+      margin-bottom: 3px;
+    }
+    }
+  
+  @media only screen and (max-width: 480px) {
+    .feedback-page_a .feedback-container_a {
+      padding: 2px;
+    }
+    .feedback-page_a .feedback-container_a .feedback-cards_a .card_a {
+      padding: 5px;
+      margin: 0;
+    }
+  }

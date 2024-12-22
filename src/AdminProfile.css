@@ -1,0 +1,136 @@
+.admin-profile-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    background: linear-gradient(135deg, #f5eafc, #e8f9f4); /* Lavender and Mint Gradient */
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Profile Picture */
+  .admin-profile-picture {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #7d6ba6; /* Lavender Border */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .admin-profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Name and Details */
+  .admin-profile-name {
+    font-size: 20px;
+    font-weight: 700;
+    color: #5a4c78; /* Deep Lavender */
+    margin: 10px 0;
+  }
+  
+  .admin-profile-role {
+    font-size: 30px;
+    color: #52a0a8; /* Mint Accent */
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .admin-profile-email,
+  .admin-phone {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 5px;
+  }
+  .admin-profile-phone{
+    margin-bottom: 3px;
+  }
+  .admin-profile-address{
+    font-size: 18px;
+  }
+  
+  /* Stats Section */
+  .admin-profile-stats {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin: 30px 0;
+  }
+  
+  .admin-profile-stat {
+    flex: 1;
+    padding: 15px;
+    background: #ffffff; /* White Card Background */
+    border-radius: 12px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+  }
+  
+  .admin-profile-stat:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .admin-profile-stat h3 {
+    font-size: 16px;
+    color: #5a4c78; /* Deep Lavender */
+    margin-bottom: 10px;
+  }
+  
+  .admin-profile-stat p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #52a0a8; /* Mint Accent */
+  }
+  
+  /* Edit Button */
+  .admin-profile-edit-btn {
+    padding: 12px 25px;
+    background: #52a0a8; /* Mint Button */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s, box-shadow 0.3s;
+  }
+  
+  .admin-profile-edit-btn:hover {
+    background: #417f87; /* Darker Mint for Hover */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .admin-save-btn_a, .admin-cancel-btn_a{
+    width: 130px;
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  }
+
+  .admin-save-btn_a {
+    background-color: #4caf50;
+    color: #fff;
+  }
+  
+  .admin-cancel-btn_a {
+    background-color: #e74c3c;
+    color: #fff;
+  }
+  
+  /* Responsive Design */
+  @media only screen and (max-width: 768px) {
+    .admin-profile-stats {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }

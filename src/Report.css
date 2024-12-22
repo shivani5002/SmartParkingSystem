@@ -1,0 +1,229 @@
+
+  .report-page {
+    height: 100vh;
+    background-color: #f4f4f9; /* Very Light Grey */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .split-layout {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    background: #ffffff; /* White */
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+    box-sizing: border-box;
+  }
+   
+  .split-layout:hover {
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.15); /* Slightly darker shadow on hover */
+  }
+  
+  /* Left Pane: Illustrative Appeal */
+  .left-pane {
+    flex: 1;
+    padding: 40px;
+    background: linear-gradient(to bottom right, #ffecd2, #fcb69f); /* Peach and Light Orange Tones */
+    color: #4a4a4a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: auto; /* Allow height to adapt */
+    overflow-y: auto; /* Enable scrolling if content exceeds */
+    box-sizing: border-box; /* Include padding and border in width/height */
+  }
+  
+  .left-pane h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+    color: #3c3c3c;
+  }
+  
+  .left-pane p {
+    font-size: 1.2rem;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 20px;
+  }
+  
+  .illustration {
+    background-image: url('https://ngf132.com/assets/avator/upload/7721584393f3065ab-babd-4f59-863f-e455e44b62f8jpeg.jpeg.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    aspect-ratio: 16 / 9;
+    width: 100%;
+  }
+  
+  /* Right Pane: Form Section */
+  .right-pane {
+    flex: 1;
+    padding: 30px;
+    background: #ffffff; /* White */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .report-form h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+    color: #ff6f61; /* Coral Accent */
+    margin-bottom: 20px; 
+  }
+  
+  .btn-highlight {
+    background: linear-gradient(to right, #ff6f61, #ff9a8b); /* Coral Gradient */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .btn-highlight:hover {
+    background: linear-gradient(to right, #ff9a8b, #ff6f61); /* Reverse Coral Gradient */
+    transform: translateY(-2px);
+  }
+  
+  .alert-success {
+    background-color: #ffe5e2; /* Light Coral Background */
+    color: #a52a2a; /* Brown Text */
+    font-family: "Poppins", sans-serif;
+    border-radius: 10px;
+    padding: 15px;
+  }
+  
+  .report-form label {
+    margin-bottom: 8px; /* Add space below the heading */
+    font-weight: bold;  /* Make the label headings stand out */
+  }
+  
+  /* Add margin-bottom to form control for spacing */
+  .report-form .form-control {
+    margin-bottom: 20px; /* Increase spacing between fields */
+    border-radius: 8px;
+  }
+  
+  /* Optionally, you can also increase the padding in the fields for more space */
+  .report-form .form-control {
+    padding: 12px; /* Adds padding inside the input field */
+  }
+  
+  /* Error message styling */
+  .text-danger {
+    color: #ff3737; /* Red color for errors */
+    font-size: 0.9rem;
+    font-family: "Poppins", sans-serif;
+    margin-top: 5px;
+  }
+  
+  /* Adjust the form group for error highlighting */
+  .report-form .form-group input:invalid,
+  .report-form .form-group select:invalid,
+  .report-form .form-group textarea:invalid {
+    border-color: #e74c3c; /* Red border color for invalid fields */
+    background-color: #ffe6e6; /* Light red background */
+  }
+  
+  /* Optional: Style the submit button for improved accessibility and focus state */
+  .report-form button:disabled {
+    background-color: #ddd; /* Disabled state button color */
+    cursor: not-allowed;
+  }
+  
+  .report-form button:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 5px rgba(235, 87, 87, 0.6); /* Focus state shadow */
+  }
+  
+  .report-form {
+    border: 1px solid #ddd; /* Light border around the form */
+    border-radius: 12px;
+    padding: 20px;
+  }
+
+  /* Responsive design for small devices */
+@media (max-width: 768px) {
+  .split-layout {
+    flex-direction: column; /* Stack panes vertically */
+    box-shadow: none; /* Remove shadow for cleaner mobile view */
+    overflow: visible; /* Ensure content isn't clipped */
+  }
+
+  .left-pane {
+    padding: 20px; /* Reduce padding for smaller screens */
+    height: auto; /* Adjust height to fit content */
+    background: linear-gradient(to bottom, #ffecd2, #fcb69f); /* Adjust gradient to flow vertically */
+    overflow-y: auto; /* Enable scrolling if content overflows */
+    max-height: 50vh; /* Limit height to avoid dominating screen */
+    display: flex;
+    flex-direction: column; /* Align content vertically */
+    justify-content: flex-start; /* Start content from top */
+    align-items: center;
+    margin-top: 65px;
+  }
+
+  .left-pane h1 {
+    font-size: 2rem; /* Reduce font size */
+    margin-bottom: 10px;
+  }
+
+  .left-pane p {
+    font-size: 1rem; /* Adjust paragraph font size */
+    line-height: 1.5; /* Ensure good readability */
+    margin-bottom: 15px;
+  }
+
+  .illustration {
+    height: auto; /* Allow image to resize */
+    width: 100%; /* Maintain full width */
+    max-height: 200px; /* Limit the image height */
+    background-size: contain; /* Ensure the image scales proportionally */
+    background-repeat: no-repeat;
+    margin-bottom: 15px; /* Add spacing below the image */
+  }
+
+  .right-pane {
+    padding: 20px; /* Reduce padding */
+    height: auto; /* Allow form to adapt to content */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Avoid centering in small screens */
+    align-items: center;
+  }
+
+  .report-form {
+    width: 100%; /* Take full width on small devices */
+    max-width: 500px; /* Limit width for better readability */
+    padding: 15px; /* Adjust padding */
+  }
+
+  .report-form h2 {
+    font-size: 1.5rem; /* Reduce heading size */
+    text-align: center;
+  }
+
+  .report-form .form-control {
+    font-size: 0.9rem; /* Adjust input font size */
+    padding: 10px; /* Reduce padding */
+  }
+
+  .btn-highlight {
+    font-size: 1rem; /* Adjust button font size */
+    padding: 10px 15px; /* Adjust button padding */
+  }
+
+  .alert-success {
+    font-size: 0.9rem; /* Adjust font size for success message */
+  }
+} 
+

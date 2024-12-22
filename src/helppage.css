@@ -1,0 +1,196 @@
+
+.help-container {
+    padding: 10px;
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .help-header {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+    color: #333;
+    background: linear-gradient(135deg, #ffecd2, #fcb69f);
+    /* background-color: #d46c6c; */
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .help-container .steps,
+  .help-container .faq
+   {
+    margin-bottom: 60px;
+  }
+  
+  .help-container .steps h2,
+  .help-container .faq h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .help-container .steps-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+  }
+  
+  .help-container .step {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .help-container .step h3 {
+    font-size: 1.5rem;
+    color:black;
+    margin-bottom: 10px;
+  }
+  
+  .help-container .step p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .help-container .step-image {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+  
+  .help-container .faq {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .help-container .faq h2 {
+    margin-bottom: 20px;
+  }
+  
+  .help-container .faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .help-container .faq-item {
+    background-color: rgb(233, 228, 228);
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .help-container .faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .help-container .faq-answer {
+    padding: 10px;
+    background-color: #fafafa;
+    margin-top: 10px;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .help-container .faq-arrow {
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .help-container .faq-arrow.open {
+    transform: rotate(180deg);
+  }
+  
+  .help-container .contact-support {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.781);
+    color:white;
+    padding: 15px;
+    margin-top: 60px;
+  }
+  
+  .help-container .contact-support p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .help-container .support-email {
+    color: #ff6a95;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .help-container .support-email:hover {
+    text-decoration: underline;
+  }
+  
+  /* Media Queries for Smaller Screens */
+  
+  @media (max-width: 768px) {
+    .help-container {
+      padding: 15px;
+    }
+  
+    .help-header {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+    .help-container .steps h2{
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+  
+    .help-container .steps-list {
+      grid-template-columns: 1fr;
+      gap: 15px;
+    }
+  
+    .help-container .step {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .help-container .step h3 {
+      font-size: 1.3rem;
+    }
+  
+    .help-container .faq h2 {
+      font-size: 1.5rem;
+    }
+  
+    .help-container .faq-item {
+      padding: 10px;
+    }
+  
+    .help-container .faq-answer {
+      font-size: 0.9rem;
+    }
+
+    .help-header {
+      font-size: 2rem;
+      padding: 15px;
+    }
+
+    .help-container .step-image {
+      width: 100%; /* Ensures the image doesn't exceed the container width */
+      height: auto; /* Keeps the aspect ratio and adjusts height automatically */
+      max-height: 200px; /* Limits the maximum height */
+      object-fit: contain; /* Ensures the image scales proportionally while cropping */
+      margin: 10px 0; /* Adds spacing around the image */
+      display: block; /* Ensures proper alignment inside the container */
+    }
+  }
